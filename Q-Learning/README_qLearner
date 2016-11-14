@@ -1,0 +1,13 @@
+To run code,
+
+g++ -o qLearner qLearner.cc -l mdp-simulation -L.
+./qLearner
+-> The optimal policy will be displayed on stdout in the form of a grid with labelled actions.
+
+The QTable can be queried in the main function of qLearner.cc as QTable[i][j] where i=stateID and j=actionID
+
+To view the plot, run:
+
+python plotRewards.py
+
+This folder also contains the python code for Policy Iteration : policyIteration.py
